@@ -7,13 +7,13 @@ using Windows.UI.Xaml;
 
 namespace Win10Unlocker.Client.ViewModels
 {
-    public class SettingsPageViewModel : ViewModelBase
+    public class SettingsPageViewModel : BaseViewModel
     {
         public SettingsPartViewModel SettingsPartViewModel { get; } = new SettingsPartViewModel();
         public AboutPartViewModel AboutPartViewModel { get; } = new AboutPartViewModel();
     }
 
-    public class SettingsPartViewModel : ViewModelBase
+    public class SettingsPartViewModel : BaseViewModel
     {
         Services.SettingsServices.SettingsService _settings;
 
@@ -62,7 +62,7 @@ namespace Win10Unlocker.Client.ViewModels
             }, () => !string.IsNullOrEmpty(BusyText)));
     }
 
-    public class AboutPartViewModel : ViewModelBase
+    public class AboutPartViewModel : BaseViewModel
     {
         public Uri Logo => Windows.ApplicationModel.Package.Current.Logo;
 

@@ -8,7 +8,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Win10Unlocker.Client.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class MainPageViewModel : BaseViewModel
     {
         public MainPageViewModel()
         {
@@ -56,6 +56,9 @@ namespace Win10Unlocker.Client.ViewModels
 
         public void GotoAbout() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 2);
+
+        public void GotoBluetooth() =>
+            NavigationService.Navigate(typeof(Views.BluetoothParing), 3);
 
     }
 }

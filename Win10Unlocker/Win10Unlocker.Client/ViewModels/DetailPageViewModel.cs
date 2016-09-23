@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Win10Unlocker.Client.ViewModels
 {
-    public class DetailPageViewModel : ViewModelBase
+    public class DetailPageViewModel : BaseViewModel
     {
         public DetailPageViewModel()
         {

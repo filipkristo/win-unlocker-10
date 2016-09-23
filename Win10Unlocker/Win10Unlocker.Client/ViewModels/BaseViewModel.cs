@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
 
-namespace Win10Unlocker.Server.ViewModels
+namespace Win10Unlocker.Client.ViewModels
 {
     public class BaseViewModel : ViewModelBase
     {
